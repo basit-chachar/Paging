@@ -1,0 +1,22 @@
+﻿@model PagingWithDB.Models.Questions
+
+
+<fieldset>
+
+    <form asp-action="AddData" method="post" asp-controller="Home" role="form">
+        <div asp-validation-summary="ModelOnly"></div>
+        <p>
+            <label asp-for="Question"></label>
+            <input asp-for="Question" class="form-control" placeholder="Enter question here!" style="width:850px;" />
+            <span asp-validation-for="Question" class="text-danger"></span>
+        </p>
+        <p>
+            <label asp-for="Answer"></label>
+            <input asp-for="Answer" class="form-control" placeholder="Enter answer here!" style="width:500px;" />
+            <span asp-validation-for="Answer" class="text-danger"></span>
+        </p>
+        <p>
+            <button type="submit" class="btn btn-block btn-outline-dark" style="width:210px;">Add Question</button>
+        </p>
+    </form>
+</fieldset>
