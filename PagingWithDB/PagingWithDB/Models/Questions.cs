@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace PagingWithDB.Models
 {
+    // I recommend to rename this class to Question
+    // because it is representing one Question item
     public class Questions
     {
         [BindNever]

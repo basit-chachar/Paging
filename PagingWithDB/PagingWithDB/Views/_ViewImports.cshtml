@@ -1,4 +1,12 @@
 ﻿@using PagingWithDB
 @using PagingWithDB.Models
-@model IEnumerable<PagingWithDB.Models.Questions>
+
+<!-- 
+    it took my an hour to figure this line of code
+    you must not declare model in this page!
+    -->
+@* @model IEnumerable<PagingWithDB.Models.Questions> *@
+
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@addTagHelper *, LazZiya.TagHelpers
